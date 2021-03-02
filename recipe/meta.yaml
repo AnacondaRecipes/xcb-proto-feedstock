@@ -2,7 +2,7 @@
 {% set xorg_category = "xcb" %}
 {% set name = "xcb-proto" %}
 {% set version = "1.14" %}
-{% set sha256 = "b3dcbad85de43e3500cc4ebd896885625f7fe6547d19fef0cbe0c54d397852e2" %}
+{% set sha256 = "1c3fa23d091fb5e4f1e9bf145a902161cec00d260fabf880a7a248b02ab27031" %}
 {% set am_version = "1.15" %} # keep synchronized with build.sh
 
 package:
