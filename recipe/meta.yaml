@@ -33,6 +33,7 @@ requirements:
     - m2-libtool                         # [win]
     - m2w64-pkg-config                   # [win]
     - m2w64-toolchain                    # [win]
+    - make                               # [not win]
     - pkg-config                         # [not win]
     - posix                              # [win]
     # - xorg-util-macros
