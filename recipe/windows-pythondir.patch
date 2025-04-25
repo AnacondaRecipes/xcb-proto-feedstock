@@ -1,6 +1,8 @@
---- configure.ac.orig	2017-02-04 17:17:00.583752530 -0500
-+++ configure.ac	2017-02-04 17:17:54.347995984 -0500
-@@ -15,6 +15,7 @@
+diff --git a/configure.ac b/configure.ac
+index 9350e71..a01f986 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -15,6 +15,7 @@ if test "$XMLLINT" = "no"; then
  fi
  
  AM_PATH_PYTHON([2.5])
@@ -8,3 +10,20 @@
  
  xcbincludedir='${datadir}/xcb'
  AC_SUBST(xcbincludedir)
+diff --git a/xcb-proto.pc.in b/xcb-proto.pc.in
+index 0822b18..8de18af 100644
+--- a/xcb-proto.pc.in
++++ b/xcb-proto.pc.in
+@@ -2,9 +2,9 @@ prefix=@prefix@
+ exec_prefix=@exec_prefix@
+ datarootdir=@datarootdir@
+ datadir=@datadir@
+-xcbincludedir=${pc_sysrootdir}@xcbincludedir@
++xcbincludedir=@xcbincludedir@
+ PYTHON_PREFIX=@PYTHON_PREFIX@
+-pythondir=${pc_sysrootdir}@pythondir@
++pythondir=@pythondir@
+ 
+ Name: XCB Proto
+ Description: X protocol descriptions for XCB
+ 
