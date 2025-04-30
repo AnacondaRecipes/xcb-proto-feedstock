@@ -52,6 +52,8 @@ test:
 
 about:
   home: http://xcb.freedesktop.org/
+  dev_url: https://gitlab.freedesktop.org/xorg/proto/xcbproto
+  doc_url: https://gitlab.freedesktop.org/xorg/proto/xcbproto
   license: MIT
   license_family: MIT
   license_file: COPYING
