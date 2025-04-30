@@ -49,6 +49,25 @@ test:
   commands:
     - pkg-config --variable=pythondir xcb-proto  # [not win]
     - set "PKG_CONFIG_PATH=%LIBRARY_PREFIX%\share\pkgconfig" && pkg-config --variable=pythondir xcb-proto  # [win]
+  
+  # Check downstream packages: 
+  # gst-plugins-base, cairo, libxkbcommon, freeglut, qtbase, qtwebengine, 
+  # nsight-compute, xcb-util-cursor, qt-webengine, pyside6, r-cairo, r-tkrplot, r-gdtools
+  downstreams:
+   - gst-plugins-base
+   - cairo
+   - libxkbcommon
+   - freeglut
+   - qtbase
+   - qtwebengine, 
+   - nsight-compute
+   - xcb-util-cursor
+   - qt-webengine
+   - pyside6
+   - r-cairo    # [linux]
+   - r-tkrplot  # [linux]
+   - r-gdtools  # [linux]
+
 
 about:
   home: http://xcb.freedesktop.org/
